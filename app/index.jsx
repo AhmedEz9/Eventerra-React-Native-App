@@ -4,6 +4,7 @@ import { View, Text, Image, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "../constants";
+import CustomButton from "../components/CustomButton";
 
 export default function App() {
   return (
@@ -28,9 +29,9 @@ export default function App() {
 
           <View className="relative mt-5">
             <Text className="text-3xl text-white font-bold text-center">
-              Discover Endless{"\n"}
-              Possibilities with{" "}
-              <Text className="text-secondary-200">Aora</Text>
+              Unlock the Pulse of{"\n"}
+              Your City with{" "}
+              <Text className="text-secondary-200">Eventerra</Text>
             </Text>
 
             <Image
@@ -41,12 +42,15 @@ export default function App() {
           </View>
 
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-            Where Creativity Meets Innovation: Embark on a Journey of Limitless
-            Exploration with Aora
+             Explore Meetups, Workshops, and More: Join Eventerra, Where Passionate Communities Connect.
           </Text>
+          <CustomButton 
+            title="Continue with Email"
+            handlePress={() => router.push("/sign-in")}
+            containerStyles="w-full mt-7"
+          />
         </View>
       </ScrollView>
-
       <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
