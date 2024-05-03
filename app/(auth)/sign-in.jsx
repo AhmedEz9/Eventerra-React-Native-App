@@ -23,9 +23,13 @@ const SignIn = () => {
 
     setSubmitting(true);
     try {
-      await signIn(form.email, form.password);
-      setUser(result);
-      setIsLogged(true);
+      // Testing Recording Auth details
+      console.log(form)
+      console.log("Logged!");
+
+      //await signIn(form.email, form.password); //func to sign in
+      //setUser(result);
+      //setIsLogged(true);
 
       router.replace("/home");
     } catch (error) {

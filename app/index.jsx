@@ -29,9 +29,9 @@ export default function App() {
 
           <View className="relative mt-5">
             <Text className="text-3xl text-white font-bold text-center">
-              Unlock the Pulse of{"\n"}
-              Your City with{" "}
-              <Text className="text-secondary-200">Eventerra</Text>
+              Discover Sustainable{"\n"}
+              Journeys with{" "}
+              <Text className="text-secondary-200">EcoVoyage</Text>
             </Text>
 
             <Image
@@ -42,7 +42,6 @@ export default function App() {
           </View>
 
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-             Explore Meetups, Workshops, and More: Join Eventerra, Where Passionate Communities Connect.
           </Text>
           <CustomButton 
             title="Continue with Email"
